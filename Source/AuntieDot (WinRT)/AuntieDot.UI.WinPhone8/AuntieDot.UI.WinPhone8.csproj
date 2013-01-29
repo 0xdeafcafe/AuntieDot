@@ -134,6 +134,7 @@
     <Content Include="Assets\AuntieDotPhases\250x250\auntiedot_static_250x250_3.png" />
     <Content Include="Assets\AuntieDotPhases\250x250\auntiedot_static_250x250_4.png" />
     <Content Include="Assets\Panorama\DummyBackground.png" />
+    <Content Include="Assets\PlaceholderData\engineer.png" />
     <Content Include="Assets\PlaceholderData\fullbody.png" />
     <Content Include="Assets\PlaceholderData\sr-076.png" />
     <Content Include="Assets\PNG\mainbg_normal.jpg" />
