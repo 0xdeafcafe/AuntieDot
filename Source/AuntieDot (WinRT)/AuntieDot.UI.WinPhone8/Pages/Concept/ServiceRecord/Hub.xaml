@@ -76,81 +76,85 @@
                         </Grid>
                     </DataTemplate>
                 </phone:PanoramaItem.HeaderTemplate>
-                <Grid Margin="10,10,0,0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="200" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    
-                    <Grid x:Name="OverviewRanks" Grid.Row="0">
-                        <Grid.RowDefinitions>
-                            <!-- Header -->
-                            <RowDefinition Height="70" />
+				<ScrollViewer>
+					<StackPanel Margin="10,10,0,0">                    
+						<Grid x:Name="OverviewRanks">
+							<Grid.RowDefinitions>
+								<!-- Header -->
+								<RowDefinition Height="70" />
                             
-                            <!-- Rank Image -->
-                            <RowDefinition Height="50" />
+								<!-- Rank Image -->
+								<RowDefinition Height="50" />
                             
-                            <!-- Specilzations -->
-                            <RowDefinition Height="38" />
+								<!-- Specilzation -->
+								<RowDefinition Height="38" />
 
-                            <!-- Progress -->
-                            <RowDefinition Height="9" />
+                                <!-- Previous Specilzations -->
+                                <RowDefinition Height="38" />
+                                
+                                <!-- Progress -->
+								<RowDefinition Height="9" />
                             
-                            <!-- XP Info -->
-                            <RowDefinition Height="30" />
+								<!-- XP Info -->
+								<RowDefinition Height="30" />
 
-                            <!-- Paddin -->
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
+								<!-- Paddin -->
+								<RowDefinition Height="*" />
+							</Grid.RowDefinitions>
                         
-                        <TextBlock Grid.Row="0" Text="RANK" Style="{StaticResource HubSubTitle}" />
+							<TextBlock Grid.Row="0" Text="RANK" Style="{StaticResource HubSubTitle}" />
                         
-                        <Image Grid.Row="1" Source="/Assets/PlaceholderData/sr-076.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" Width="410" />
+							<Image Grid.Row="1" Source="/Assets/PlaceholderData/sr-076.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" Width="410" />
                         
-						<StackPanel Grid.Row="2" Orientation="Horizontal">
-							<TextBlock Text="WETWORK" FontFamily="Segoe WP Semibold" FontSize="26.667" />
-							<ScrollViewer Margin="15,0,0,0">
-								<StackPanel Orientation="Horizontal">
-									<Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-									<Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-									<Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-									<Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-									<Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-									<Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-									<Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-									<Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+							<Grid Grid.Row="2">
+								<TextBlock Text="WETWORK" FontFamily="Segoe WP Semibold" FontSize="26.667" />
+                            </Grid>
+
+                            <ScrollViewer Grid.Row="3" HorizontalScrollBarVisibility="Auto" Margin="0,0,0,0">
+                                <StackPanel Width="378" Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                </StackPanel>
+                            </ScrollViewer>
+
+                            <ProgressBar Grid.Row="4" Value="56" Height="10" VerticalAlignment="Top" Padding="0" />
+
+							<Grid Grid.Row="5">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="200" />
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="200" />
+								</Grid.ColumnDefinitions>
+
+								<StackPanel Grid.Column="0" Orientation="Horizontal">
+									<TextBlock Text="22688XP" FontFamily="Segoe WP SemiLight" FontSize="21.333" />
+									<TextBlock Text=" / 47740XP" FontFamily="Segoe WP SemiLight" FontSize="13.333" >
+										<TextBlock.Foreground>
+											<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+										</TextBlock.Foreground>
+									</TextBlock>
 								</StackPanel>
-							</ScrollViewer>
-						</StackPanel>
-
-                        <ProgressBar Grid.Row="3" Value="56" Height="10" VerticalAlignment="Top" Padding="0" />
-
-						<Grid Grid.Row="4">
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="200" />
-								<ColumnDefinition Width="*" />
-								<ColumnDefinition Width="200" />
-							</Grid.ColumnDefinitions>
-
-							<StackPanel Grid.Column="0" Orientation="Horizontal">
-								<TextBlock Text="22688XP" FontFamily="Segoe WP SemiLight" FontSize="21.333" />
-								<TextBlock Text=" / 47740XP" FontFamily="Segoe WP SemiLight" FontSize="13.333" >
-									<TextBlock.Foreground>
-										<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
-									</TextBlock.Foreground>
-								</TextBlock>
-							</StackPanel>
-							<StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
-								<TextBlock Text="25052 XP" FontFamily="Segoe WP SemiLight" FontSize="13.333" />
-								<TextBlock Text=" TO NEXT RANK" FontFamily="Segoe WP SemiLight" FontSize="13.333" >
-									<TextBlock.Foreground>
-										<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
-									</TextBlock.Foreground>
-								</TextBlock>
-							</StackPanel>
+								<StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+									<TextBlock Text="25052 XP" FontFamily="Segoe WP SemiLight" FontSize="13.333" />
+									<TextBlock Text=" TO NEXT RANK" FontFamily="Segoe WP SemiLight" FontSize="13.333" >
+										<TextBlock.Foreground>
+											<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+										</TextBlock.Foreground>
+									</TextBlock>
+								</StackPanel>
+							</Grid>
 						</Grid>
-                    </Grid>
-                </Grid>
+
+						
+					</StackPanel>
+				</ScrollViewer>
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
