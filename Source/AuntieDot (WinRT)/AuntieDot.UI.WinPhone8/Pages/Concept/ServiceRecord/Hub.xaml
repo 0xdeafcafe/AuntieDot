@@ -13,7 +13,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="False">
+    shell:SystemTray.IsVisible="False"
+    Height="2000">
 
     <phone:PhoneApplicationPage.Resources>
         <ControlTemplate x:Key="panoramaTemplate" TargetType="controls:Panorama">
@@ -76,7 +77,7 @@
                         </Grid>
                     </DataTemplate>
                 </phone:PanoramaItem.HeaderTemplate>
-				<ScrollViewer>
+				<ScrollViewer >
 					<StackPanel Margin="10,10,0,0">                    
 						<Grid x:Name="OverviewRanks">
 							<Grid.RowDefinitions>
@@ -84,7 +85,7 @@
 								<RowDefinition Height="70" />
                             
 								<!-- Rank Image -->
-								<RowDefinition Height="50" />
+								<RowDefinition Height="45" />
                             
 								<!-- Specilzation -->
 								<RowDefinition Height="38" />
@@ -110,7 +111,7 @@
 								<TextBlock Text="WETWORK" FontFamily="Segoe WP Semibold" FontSize="26.667" />
                             </Grid>
 
-                            <ScrollViewer Grid.Row="3" HorizontalScrollBarVisibility="Auto" Margin="0,0,0,0">
+                            <ScrollViewer Grid.Row="3" HorizontalScrollBarVisibility="Auto" Margin="-5,0,0,0">
                                 <StackPanel Width="378" Orientation="Horizontal" HorizontalAlignment="Left">
                                     <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
                                     <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
@@ -152,8 +153,100 @@
 							</Grid>
 						</Grid>
 
-						
-					</StackPanel>
+                        <Grid x:Name="OverviewStats" Margin="0,25,0,0">
+                            <Grid.RowDefinitions>
+                                <!-- Header -->
+                                <RowDefinition Height="70" />
+
+                                <!-- Game Stats -->
+                                <RowDefinition Height="120" />
+
+                                <!-- Kill Stats -->
+                                <RowDefinition Height="100" />
+
+                                <!-- Unlock Stats -->
+                                <RowDefinition Height="120" />
+
+                                <!-- Date Stats -->
+                                <RowDefinition Height="120" />
+
+                                <!-- Paddin -->
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Text="STATS" Style="{StaticResource HubSubTitle}" />
+                            
+                            <StackPanel Grid.Row="1">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Games Started: " />
+                                    <TextBlock Margin="5,0,0,0" Text="586" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Games Completed: " />
+                                    <TextBlock Margin="5,0,0,0" Text="442" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Games Won: " />
+                                    <TextBlock Margin="5,0,0,0" Text="257" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Medals Earned: " />
+                                    <TextBlock Margin="5,0,0,0" Text="20351" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Total Kills: " />
+                                    <TextBlock Margin="5,0,0,0" Text="7375" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Total Deaths: " />
+                                    <TextBlock Margin="5,0,0,0" Text="5579" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="K/D Spread: " />
+                                    <TextBlock Margin="5,0,0,0" Text="1.32" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="3">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Spartan Points: " />
+                                    <TextBlock Margin="5,0,0,0" Text="52" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Loadout Items Purchased: " />
+                                    <TextBlock Margin="5,0,0,0" Text="25" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Challenges Completed: " />
+                                    <TextBlock Margin="5,0,0,0" Text="75" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="XP: " />
+                                    <TextBlock Margin="5,0,0,0" Text="134098" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="4">
+                                <TextBlock Text="Total Game Time: " />
+                                <TextBlock Margin="5,0,0,0" Text="3 Days, 7 Hours, 35 Minutes and 20 Seconds" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Last Played: " />
+                                    <TextBlock Margin="5,0,0,0" Text="12/01/2013" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="First Played: " />
+                                    <TextBlock Margin="5,0,0,0" Text="06/11/2012" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        
+                        <Grid x:Name="OverviewMedals" Margin="0,25,0,0">
+                            
+                        </Grid>
+                    </StackPanel>
 				</ScrollViewer>
             </phone:PanoramaItem>
 
