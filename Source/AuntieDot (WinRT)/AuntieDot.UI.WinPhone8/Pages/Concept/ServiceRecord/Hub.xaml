@@ -1,0 +1,203 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AuntieDot.UI.WinPhone8.Pages.Concept.ServiceRecord.Hub"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:controlsPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <phone:PhoneApplicationPage.Resources>
+        <ControlTemplate x:Key="panoramaTemplate" TargetType="controls:Panorama">
+            <Grid Background="#FF1d1f25">
+                <controlsPrimitives:PanningBackgroundLayer x:Name="BackgroundLayer"
+                                                           HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Grid HorizontalAlignment="Stretch">
+                    	<Image Source="/Assets/PNG/mainbg_normal.jpg" Stretch="UniformToFill" />
+                        <Image Source="/Assets/PlaceholderData/fullbody.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" Height="234" Margin="0,-30,0,0">
+                            <Image.OpacityMask>
+                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1" >
+                                    <GradientStop Offset="0.36" Color="#00000000" />
+                                    <GradientStop Color="#FF000000" />
+                                </LinearGradientBrush>
+                            </Image.OpacityMask>
+                        </Image>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="PhoenixBanTrain" VerticalAlignment="Top" Margin="249,10,-722,0" FontFamily="Segoe WP Light" FontSize="64" Height="100" Width="953"/>
+                    	<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="SWAG" VerticalAlignment="Top" Margin="249,95,-722,0" FontFamily="Segoe WP" FontSize="32" FontWeight="Bold" Width="953"/>
+                    </Grid>
+                </controlsPrimitives:PanningBackgroundLayer>
+
+                <controlsPrimitives:PanningTitleLayer x:Name="TitleLayer" Grid.Row="0" HorizontalAlignment="Left"  Margin="10,-76,0,9"
+                                                        Content="{TemplateBinding Title}" ContentTemplate="{TemplateBinding TitleTemplate}" 
+                                                        FontSize="187" FontFamily="{StaticResource PhoneFontFamilyLight}" CacheMode="BitmapCache"/>
+
+                <controlsPrimitives:PanningLayer x:Name="ItemsLayer" Grid.Row="1" HorizontalAlignment="Left">
+                    <ItemsPresenter x:Name="items"/>
+                </controlsPrimitives:PanningLayer>
+
+            </Grid>
+        </ControlTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <phone:Panorama Template="{StaticResource panoramaTemplate}">
+        	<phone:Panorama.Background>
+        		<ImageBrush Stretch="Fill" ImageSource="/Assets/Panorama/DummyBackground.png"/>
+            </phone:Panorama.Background>
+
+            <!--Panorama item one-->
+            <phone:PanoramaItem Header="overview" Margin="0,200,0,0">
+                <phone:PanoramaItem.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <ContentPresenter>
+                                <Grid Height="95">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="85" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_overview.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+									<Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_overview.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+									<Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_overview.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+                                    
+                                    <TextBlock Grid.Column="1" Text="{Binding}" />
+                                </Grid>
+                            </ContentPresenter>
+                        </Grid>
+                    </DataTemplate>
+                </phone:PanoramaItem.HeaderTemplate>
+                <Grid Margin="10,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    
+                    <Grid x:Name="OverviewRanks" Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="65" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                        </Grid.RowDefinitions>
+                        
+                        <TextBlock Grid.Row="0" Text="RANK" Style="{StaticResource HubSubTitle}" />
+                        
+                        <Image Grid.Row="1" Source="/Assets/PlaceholderData/sr-076.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" Width="410" />
+                        
+                        <ProgressBar Grid.Row="2" Value="56" Height="10" VerticalAlignment="Top" Padding="0" />
+                    </Grid>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!--Panorama item two-->
+            <phone:PanoramaItem Header="campaign" Margin="0,200,0,0">
+                <phone:PanoramaItem.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <ContentPresenter>
+                                <Grid Height="95">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="85" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_campaign.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+                                    <Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_campaign.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+                                    <Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_campaign.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+
+                                    <TextBlock Grid.Column="1" Text="{Binding}" />
+                                </Grid>
+                            </ContentPresenter>
+                        </Grid>
+                    </DataTemplate>
+                </phone:PanoramaItem.HeaderTemplate>
+                <Grid/>
+            </phone:PanoramaItem>
+
+            <!--Panorama item three-->
+            <phone:PanoramaItem Header="spartan ops" Margin="0,200,0,0">
+                <phone:PanoramaItem.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <ContentPresenter>
+                                <Grid Height="95">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="85" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_spartanops.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+									<Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_spartanops.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+									<Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_spartanops.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+
+                                    <TextBlock Grid.Column="1" Text="{Binding}" />
+                                </Grid>
+                            </ContentPresenter>
+                        </Grid>
+                    </DataTemplate>
+                </phone:PanoramaItem.HeaderTemplate>
+                <Grid/>
+            </phone:PanoramaItem>
+
+            <!--Panorama item four-->
+            <phone:PanoramaItem Header="wargames" Margin="0,200,0,0">
+                <phone:PanoramaItem.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <ContentPresenter>
+                                <Grid Height="95">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="85" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_wargames.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+									<Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_wargames.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+									<Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_wargames.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+
+                                    <TextBlock Grid.Column="1" Text="{Binding}" />
+                                </Grid>
+                            </ContentPresenter>
+                        </Grid>
+                    </DataTemplate>
+                </phone:PanoramaItem.HeaderTemplate>
+                <Grid/>
+            </phone:PanoramaItem>
+
+            <!--Panorama item five-->
+            <phone:PanoramaItem Header="customs" Margin="0,200,0,0">
+                <phone:PanoramaItem.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <ContentPresenter>
+                                <Grid Height="95">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="85" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_customs.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+									<Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_customs.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+									<Image Grid.Column="0" Height="70" Stretch="Uniform" Source="/Assets/PNG/s_small/preview_customs.png" VerticalAlignment="Bottom" Margin="0,0,0,5" />
+
+                                    <TextBlock Grid.Column="1" Text="{Binding}" />
+                                </Grid>
+                            </ContentPresenter>
+                        </Grid>
+                    </DataTemplate>
+                </phone:PanoramaItem.HeaderTemplate>
+                <Grid/>
+            </phone:PanoramaItem>
+        </phone:Panorama>
+    </Grid>
+
+</phone:PhoneApplicationPage>

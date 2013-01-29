@@ -1,0 +1,53 @@
+﻿/* Home Page
+-------------------------------------- */
+#api .user-interaction {
+	margin: 0 auto;
+	height: 300px;
+	width: 501px;
+}
+	.user-interaction .seperator {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		float: left;
+		height: 300px;
+	}
+	.interaction-dev {
+		float: left;
+		width: 250px;
+		height: 300px;
+		text-align: center;
+	}
+		.dev-eye-candy {
+			margin-top: 60px;
+			text-align: center;
+		}
+
+	.interaction-user {
+		float: left;
+		width: 250px;
+		height: 300px;
+		text-align: center;
+	}
+		.user-gt-search {
+			margin-top: 20px;
+			text-align: center;
+		}
+			.user-gt-search input {
+				width: 170px;
+			}
+
+.auntie-icon {
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.header {
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+.btn {
+	width: 185px;
+	margin-left: -1px;
+}

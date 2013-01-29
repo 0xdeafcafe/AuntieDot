@@ -1,0 +1,111 @@
+﻿/* FOOTER LAYOUT 
+----------------------------------------------------------*/ 
+.footer {
+	background-color: #35383d;
+    padding-top: 30px;
+    padding-bottom: 40px;
+	color: #ffffff;
+
+    font-family: 'Segoe WP', 'Segoe UI', Tahoma, Verdana, Arial;
+}
+    .footer .container {
+	    width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+	    padding-top: 0px;
+        margin-top: 00px;
+    }
+
+        .footer .container .recomended-sites {
+            float: left;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+            .footer .container .recomended-sites .site-cascading-list {
+                list-style-position: outside;
+                list-style-image: none;
+                list-style-type: none;
+                margin-top: 5px;
+                margin-left: 0px;
+            }
+                .footer .container .recomended-sites .site-cascading-list li {
+                    margin-top: 15px;
+                }
+                .footer .container .recomended-sites .site-cascading-list .site-entry a {
+                    color: #dbdbdb;
+					transition-property: color;
+					transition-duration: 0.2s;
+					transition-timing-function: linear;
+					transition-delay: 0s;
+                }
+					.footer .container .recomended-sites .site-cascading-list .site-entry a:hover {
+						color: #ce8b10;
+					}
+                .footer .container .recomended-sites .site-cascading-list .site-entry span {
+                    padding-left: 10px;
+                }
+                .footer .container .recomended-sites .site-cascading-list .site-entry .site-icon {
+                    height: 25px;
+                    width: 25px;
+                }
+
+        .footer .container .column-one {
+            float: left;
+            margin-left: 150px;
+        }
+            .footer .container .column-one .panel-downloads {
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+            }
+                .footer .container .column-one .panel-downloads .downloads-cascading-list {
+                    list-style-image: none;
+                    list-style-position: outside;
+                    list-style-type: none;
+                    margin-top: 10px;
+                    margin-left: 0px;
+                }
+                    .footer .container .column-one .panel-downloads .downloads-cascading-list li {
+                        margin-top: 10px;
+                        font-size: 14px;
+                    }
+            .footer .container .column-one .panel-contact {
+                color: #ffffff;
+                font-size: 16px;
+                margin-top: 30px;
+                font-weight: 400;
+            }
+                .footer .container .column-one .panel-contact .contact-cascading-list {
+                    list-style-image: none;
+                    list-style-position: outside;
+                    list-style-type: none;
+                    margin-top: 10px;
+                    margin-left: 0px;
+                }
+                    .footer .container .column-one .panel-contact .contact-cascading-list li {
+                        margin-top: 10px;
+                        font-size: 14px;
+                    }
+
+        .footer .container .column-two {
+            float: left;
+            margin-left: 180px;
+        }
+            .footer .container .column-two .panel-sitemap {
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+            }
+                .footer .container .column-two .panel-sitemap .sitemap-cascading-list {
+                    list-style-image: none;
+                    list-style-position: outside;
+                    list-style-type: none;
+                    margin-top: 10px;
+                    margin-left: 0px;
+                }
+                    .footer .container .column-two .panel-sitemap .sitemap-cascading-list li {
+                        margin-top: 10px;
+                        font-size: 14px;
+                    }

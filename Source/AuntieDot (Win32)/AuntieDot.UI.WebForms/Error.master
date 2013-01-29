@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Error.master.cs" Inherits="AuntieDot.UI.Web.Error" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="CssContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="JavascriptContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="BodyContent" runat="server">
+	<div class="page">
+		<div class="container">
+			<header class="jumbotron" id="overview">
+				<div class="row">
+					<div id="error_logo">
+			
+					</div>
+				</div>
+			</header>
+
+			<section class="seperator-horizontal"></section>
+
+			<section id="api">
+				<div class="error-title">
+					<asp:ContentPlaceHolder runat="server" ID="ErrorTitle" />
+				</div>
+				<div class="error-content">
+					<asp:ContentPlaceHolder runat="server" ID="ErrorDesc" />
+				</div>
+			</section>
+
+			<section class="seperator-horizontal" style="margin-bottom: 50px;"></section>
+		</div>
+	</div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="JavascriptInlineContent" runat="server">
+</asp:Content>

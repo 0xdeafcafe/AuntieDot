@@ -1,0 +1,279 @@
+﻿.page-container {
+	margin-top: 50px;
+	color: #e8e8e8;
+}
+.row-data {
+	min-height: 250px;
+}
+.row-alpha {
+	background-color: #2a2c30;
+}
+.row-delta {
+	background-color: #1c1f25;
+}
+.row-container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+/* PLAYER VISUALS
+################################# */
+.player-visuals {
+	height: 300px;
+}
+.player-image {
+	background-position: center -20px;
+	background-repeat: no-repeat;
+	
+	margin-left: 140px;
+	width: 320px;
+	height: 300px;
+
+	float: left;
+}
+.player-detail-summary {
+	margin-left: 20px;
+	width: 460px;
+	float: left;
+}
+	.player-gamertag {
+		margin-top: 40px;
+		margin-left: 30px;
+		font-size: 50px;
+	}
+	.player-servicetag {
+		margin-top: 25px;
+		margin-left: 30px;
+		font-size: 40px;
+		font-weight: 700;
+	}
+	.player-emblem {
+		background-repeat: no-repeat;
+
+		margin-top: 25px;
+		margin-left: 30px;
+
+		width: 120px;
+		height: 120px;
+	}
+
+	
+/* PLAYER GAMEPLAY SUMMARY
+################################# */
+.gameplay-summary {
+	height: 280px;
+}
+.gameplay-favourite-weapon {
+	float: left;
+	width: 300px;
+}
+.gameplay-left {
+	float: left;
+	width: 640px;
+}
+.gameplay-favourite-weapon-icon {
+	background-repeat: no-repeat;
+
+	width: 220px;
+	height: 70px;
+
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.gameplay-favourite-weapon-stats {
+	width: 220px;
+	margin-top: 40px;
+	margin-left: 20px;
+	text-align: center;
+}
+	.gameplay-favourite-name {
+		width: 220px;
+		text-align: center;
+		font-size: 30px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.gameplay-favourite-kill-count {
+		font-size: 100px;
+		font-weight: 600;
+	}
+	.gameplay-favourite-kill {
+		text-align: center;
+		font-size: 20px;
+		margin-top: 40px;
+	}
+	.gameplay-favourite-weapon-desc {
+		font-size: 16px;
+		font-weight: 400;
+		margin-top: 70px;
+	}
+
+
+/* STATS OVERVIEW
+################################# */
+.stats-overview {
+	height: 300px;
+}
+	.stats-overview .seperator {
+		float: left;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		height: 260px;
+	}
+.stats-rank {
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+	.stats-rank-icon {
+		background-repeat: no-repeat;
+		background-position: left bottom;
+
+		min-width: 200px;
+		min-height: 40px;
+
+		margin-top: 100px;
+		margin-left: 15px;
+	}
+	.stats-spec-name {
+		font-size: 40px;
+		font-weight: 300;
+		
+		margin-top: 12px;
+		margin-left: 12px;
+	}
+
+	.rank-progression {
+		margin-top: 30px;
+		margin-left: 12px;
+	}
+		.progression-done {
+			background-color: #007ffe;
+
+			height: 5px;
+			float: left;
+		}
+		.progression-togo {
+			background-color: #ffffff;
+
+			margin-top: 2px;
+			height: 1px;
+
+			float: left;
+		}
+	.rank-xp-info {
+		margin-top: 15px;
+		margin-left: 12px;
+
+		font-size: 40px;
+		font-weight: 300;
+	}
+		.rank-xp-info span {
+			font-size: 15px;
+			font-weight: 500;
+		}
+
+	.stats-summary {
+	}
+		.stats-large-sp {
+			float: right;
+			padding-top: 20px;
+		}
+			.stat-large-header {
+				font-size: 120px;
+				font-weight: 300;
+				text-align: right;
+			}
+			.stat-large-data {
+				margin-top: 40px;
+				margin-right: -30px;
+
+				font-size: 40px;
+				font-weight: 300;
+				text-align: right;
+			}
+			.stat-large-placement {
+				margin-right: 140px;
+				margin-top: 100px;
+			}
+
+		.stats-small {
+			float: left;
+			margin-left: 20px;
+			padding-top: 20px;
+		}
+			.stat-header {
+				font-size: 15px;
+				font-weight: 300;
+			}
+			.stat-data {
+				margin-top: 15px;
+				margin-bottom: 35px;
+
+				font-size: 60px;
+				font-weight: 300;
+			}
+
+			
+/* MEDALS OVERVIEW
+################################# */
+.medals-overview {
+	padding: 20px;
+}
+	.medals-error {
+		font-size: 25px;
+		margin-top: 10px;
+		margin-left: 15px;
+	}
+	.medals-title {
+		margin-top: 5px;
+		margin-left: 15px;
+		margin-bottom: 15px;
+		font-size: 30px;
+	}
+	.medal-entry {
+		border: 1px solid #16181b;
+		border-bottom: 18px solid #16181b;
+		background-color: #292c34;
+		background-position: center 15px;
+		background-repeat: no-repeat;
+
+		float: left;
+		text-align: center;
+
+		height: 100px;
+		width: 70px;
+		margin: 10px;
+	}
+		.medal-count {
+			margin-top: 98px;
+		}
+
+			
+/* PAGE OVERVIEW
+################################# */
+.page-summary {
+	
+}
+	.dev-outro {
+		padding-top: 25px;
+	}
+	.nub-outro {
+		margin-top: 15px;
+	}
+	.foot-note {
+		margin-top: 70px;
+		color: #7e7e7e;
+		font-size: 14px;
+		font-weight: 400;
+	}
+		.outro-header {
+			font-size: 20px;
+			font-weight: 500;
+		}
+		.outro-body {
+			margin-top: 5px;
+			font-size: 15px;
+			font-weight: 400;
+		}
