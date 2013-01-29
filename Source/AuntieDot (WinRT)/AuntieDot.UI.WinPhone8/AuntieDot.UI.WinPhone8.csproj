@@ -136,6 +136,7 @@
     <Content Include="Assets\Panorama\DummyBackground.png" />
     <Content Include="Assets\PlaceholderData\engineer.png" />
     <Content Include="Assets\PlaceholderData\fullbody.png" />
+    <Content Include="Assets\PlaceholderData\kill-headshot.png" />
     <Content Include="Assets\PlaceholderData\sr-076.png" />
     <Content Include="Assets\PNG\mainbg_normal.jpg" />
     <Content Include="Assets\PNG\mainbg_blurred.jpg" />

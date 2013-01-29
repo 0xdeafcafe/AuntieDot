@@ -13,8 +13,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="False"
-    Height="2000">
+    shell:SystemTray.IsVisible="False">
+    <!--Height="2000">-->
 
     <phone:PhoneApplicationPage.Resources>
         <ControlTemplate x:Key="panoramaTemplate" TargetType="controls:Panorama">
@@ -111,17 +111,17 @@
 								<TextBlock Text="WETWORK" FontFamily="Segoe WP Semibold" FontSize="26.667" />
                             </Grid>
 
-                            <ScrollViewer Grid.Row="3" HorizontalScrollBarVisibility="Auto" Margin="-5,0,0,0">
+                            <ScrollViewer Grid.Row="3" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="-5,0,0,0">
                                 <StackPanel Width="378" Orientation="Horizontal" HorizontalAlignment="Left">
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
-                                    <Image Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
+                                    <Image Width="32" Height="32" Stretch="Fill" Source="/Assets/PlaceholderData/engineer.png" Margin="5,0,5,0" />
                                 </StackPanel>
                             </ScrollViewer>
 
@@ -136,15 +136,15 @@
 
 								<StackPanel Grid.Column="0" Orientation="Horizontal">
 									<TextBlock Text="22688XP" FontFamily="Segoe WP SemiLight" FontSize="21.333" />
-									<TextBlock Text=" / 47740XP" FontFamily="Segoe WP SemiLight" FontSize="13.333" >
+									<TextBlock Text=" / 47740XP" FontFamily="Segoe WP SemiLight" FontSize="15.333" >
 										<TextBlock.Foreground>
 											<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
 										</TextBlock.Foreground>
 									</TextBlock>
 								</StackPanel>
 								<StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
-									<TextBlock Text="25052 XP" FontFamily="Segoe WP SemiLight" FontSize="13.333" />
-									<TextBlock Text=" TO NEXT RANK" FontFamily="Segoe WP SemiLight" FontSize="13.333" >
+                                    <TextBlock Text="25052 XP" FontFamily="Segoe WP SemiLight" FontSize="15.333" />
+                                    <TextBlock Text=" TO NEXT RANK" FontFamily="Segoe WP SemiLight" FontSize="15.333" >
 										<TextBlock.Foreground>
 											<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
 										</TextBlock.Foreground>
@@ -243,9 +243,107 @@
                             </StackPanel>
                         </Grid>
                         
-                        <Grid x:Name="OverviewMedals" Margin="0,25,0,0">
+                        <StackPanel x:Name="OverviewMedals" Margin="0,25,0,0">
+                            <TextBlock Grid.Row="0" Text="MEDALS" Style="{StaticResource HubSubTitle}" />
                             
-                        </Grid>
+                            <StackPanel Margin="0,20,0,0" Grid.Row="1">
+                                <Grid MinHeight="140" Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="130" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Stretch="None" Source="/Assets/PlaceholderData/kill-headshot.png" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock Grid.RowSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="15" Opacity="0.5" FontSize="120" Margin="0,0,-4,-25" Foreground="{StaticResource PhoneAccentBrush}" FontFamily="Segoe WP Light" />
+                                        
+                                        <TextBlock Grid.Row="0" Foreground="#FF9D9D9D" Text="Unfriggenbelievable" />
+                                        <TextBlock Grid.Row="1" Foreground="#FF9D9D9D" TextWrapping="Wrap" Text="Kill 40 opponents without dying." />
+                                    </Grid>
+                                </Grid>
+                                <Grid MinHeight="140" Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="130" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Stretch="None" Source="/Assets/PlaceholderData/kill-headshot.png" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock Grid.RowSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="15" Opacity="0.5" FontSize="120" Margin="0,0,-4,-25" Foreground="{StaticResource PhoneAccentBrush}" FontFamily="Segoe WP Light" />
+
+                                        <TextBlock Grid.Row="0" Foreground="#FF9D9D9D" Text="Unfriggenbelievable" />
+                                        <TextBlock Grid.Row="1" Foreground="#FF9D9D9D" TextWrapping="Wrap" Text="Kill 40 opponents without dying." />
+                                    </Grid>
+                                </Grid>
+                                <Grid MinHeight="140" Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="130" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Stretch="None" Source="/Assets/PlaceholderData/kill-headshot.png" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock Grid.RowSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="15" Opacity="0.5" FontSize="120" Margin="0,0,-4,-25" Foreground="{StaticResource PhoneAccentBrush}" FontFamily="Segoe WP Light" />
+
+                                        <TextBlock Grid.Row="0" Foreground="#FF9D9D9D" Text="Unfriggenbelievable" />
+                                        <TextBlock Grid.Row="1" Foreground="#FF9D9D9D" TextWrapping="Wrap" Text="Kill 40 opponents without dying." />
+                                    </Grid>
+                                </Grid>
+                                <Grid MinHeight="140" Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="130" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Stretch="None" Source="/Assets/PlaceholderData/kill-headshot.png" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock Grid.RowSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="15" Opacity="0.5" FontSize="120" Margin="0,0,-4,-25" Foreground="{StaticResource PhoneAccentBrush}" FontFamily="Segoe WP Light" />
+
+                                        <TextBlock Grid.Row="0" Foreground="#FF9D9D9D" Text="Unfriggenbelievable" />
+                                        <TextBlock Grid.Row="1" Foreground="#FF9D9D9D" TextWrapping="Wrap" Text="Kill 40 opponents without dying." />
+                                    </Grid>
+                                </Grid>
+                                <Grid MinHeight="140" Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="130" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Stretch="None" Source="/Assets/PlaceholderData/kill-headshot.png" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock Grid.RowSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="15" Opacity="0.5" FontSize="120" Margin="0,0,-4,-25" Foreground="{StaticResource PhoneAccentBrush}" FontFamily="Segoe WP Light" />
+
+                                        <TextBlock Grid.Row="0" Foreground="#FF9D9D9D" Text="Unfriggenbelievable" />
+                                        <TextBlock Grid.Row="1" Foreground="#FF9D9D9D" TextWrapping="Wrap" Text="Kill 40 opponents without dying." />
+                                    </Grid>
+                                </Grid>
+                            </StackPanel>
+                        </StackPanel>
                     </StackPanel>
 				</ScrollViewer>
             </phone:PanoramaItem>
