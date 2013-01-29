@@ -77,7 +77,7 @@
                         </Grid>
                     </DataTemplate>
                 </phone:PanoramaItem.HeaderTemplate>
-				<ScrollViewer >
+				<ScrollViewer>
 					<StackPanel Margin="10,10,0,0">                    
 						<Grid x:Name="OverviewRanks">
 							<Grid.RowDefinitions>
@@ -370,7 +370,46 @@
                         </Grid>
                     </DataTemplate>
                 </phone:PanoramaItem.HeaderTemplate>
-                <Grid/>
+                <ScrollViewer>
+                    <StackPanel Margin="10,10,0,0">
+                        <Grid x:Name="CampaignStatOverview">
+                            <Grid.RowDefinitions>
+                                <!-- Header -->
+                                <RowDefinition Height="70" />
+
+                                <!-- Game Stats -->
+                                <RowDefinition Height="180" />
+                                
+                                <!-- Paddin -->
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Text="STAT OVERVIEW" Style="{StaticResource HubSubTitle}" />
+
+
+                            <StackPanel Grid.Row="1">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Games Started: " />
+                                    <TextBlock Margin="5,0,0,0" Text="36" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Total Kills: " />
+                                    <TextBlock Margin="5,0,0,0" Text="3023" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Total Deaths: " />
+                                    <TextBlock Margin="5,0,0,0" Text="292" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Terminals Visited: " />
+                                    <TextBlock Margin="5,0,0,0" Text="3" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                </StackPanel>
+                                <TextBlock Text="Gameplay Duration: " />
+                                <TextBlock Margin="5,0,0,0" Text="0 Days, 12 Hours, 48 Minutes and 20 seconds" Foreground="{StaticResource PhoneAccentBrush}"/>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
             </phone:PanoramaItem>
 
             <!--Panorama item three-->
