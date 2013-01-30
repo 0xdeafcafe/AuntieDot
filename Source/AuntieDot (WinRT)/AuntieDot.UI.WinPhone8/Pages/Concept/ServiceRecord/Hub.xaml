@@ -10,8 +10,8 @@
     x:Class="AuntieDot.UI.WinPhone8.Pages.Concept.ServiceRecord.Hub"
     mc:Ignorable="d"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="False">
-    <!--Height="2000">-->
+    shell:SystemTray.IsVisible="False"
+    Height="2000">
 
     <phone:PhoneApplicationPage.Resources>
         <ControlTemplate x:Key="panoramaTemplate" TargetType="controls:Panorama">
@@ -575,6 +575,17 @@
                         		</Grid>
                         	</Grid>
                         </Grid>
+
+						<Grid HorizontalAlignment="Center" Margin="0,50,0,0">
+							<Button Style="{StaticResource ButtonGoToDetail}">
+								<Grid>
+									<Image Source="/Assets/PNG/s_large/preview_campaign.png" Stretch="None" />
+									<Image Source="/Assets/PNG/s_large/preview_campaign.png" Stretch="None" />
+									<Image Source="/Assets/PNG/s_large/preview_campaign.png" Stretch="None" />
+									<Image Source="/Assets/PNG/s_large/preview_campaign.png" Stretch="None" />
+								</Grid>
+							</Button>
+						</Grid>
                     </StackPanel>
                 </ScrollViewer>
             </phone:PanoramaItem>
