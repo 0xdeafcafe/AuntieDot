@@ -1,5 +1,4 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="AuntieDot.UI.WinPhone8.Pages.Concept.ServiceRecord.Hub"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -8,11 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     xmlns:controlsPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls"
+    x:Class="AuntieDot.UI.WinPhone8.Pages.Concept.ServiceRecord.Hub"
     mc:Ignorable="d"
-    FontFamily="{StaticResource PhoneFontFamilyNormal}"
-    FontSize="{StaticResource PhoneFontSizeNormal}"
-    Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait"  Orientation="Portrait"
+    SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
     <!--Height="2000">-->
 
@@ -48,10 +45,20 @@
         </ControlTemplate>
     </phone:PhoneApplicationPage.Resources>
 
+	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+
     <!--LayoutRoot contains the root grid where all other page content is placed-->
     <Grid x:Name="LayoutRoot">
         <phone:Panorama Template="{StaticResource panoramaTemplate}">
-        	<phone:Panorama.Background>
+            <phone:Panorama.Background>
         		<ImageBrush Stretch="Fill" ImageSource="/Assets/Panorama/DummyBackground.png"/>
             </phone:Panorama.Background>
 
@@ -76,7 +83,7 @@
                             </ContentPresenter>
                         </Grid>
                     </DataTemplate>
-                </phone:PanoramaItem.HeaderTemplate>
+             </phone:PanoramaItem.HeaderTemplate>
 				<ScrollViewer>
 					<StackPanel Margin="10,10,0,0">                    
 						<Grid x:Name="OverviewRanks">
@@ -386,7 +393,6 @@
 
                             <TextBlock Grid.Row="0" Text="STAT OVERVIEW" Style="{StaticResource HubSubTitle}" />
 
-
                             <StackPanel Grid.Row="1">
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Games Started: " />
@@ -407,6 +413,167 @@
                                 <TextBlock Text="Gameplay Duration: " />
                                 <TextBlock Margin="5,0,0,0" Text="0 Days, 12 Hours, 48 Minutes and 20 seconds" Foreground="{StaticResource PhoneAccentBrush}"/>
                             </StackPanel>
+                        </Grid>
+                        <Grid x:Name="CampaignMissionOverview" Margin="0,25,0,10">
+                        	<Grid.RowDefinitions>
+                                <!-- Header -->
+                        		<RowDefinition Height="70" />
+
+                                <!-- Mission Completion -->
+                        		<RowDefinition Height="380" />
+
+                                <!-- Paddin -->
+                        		<RowDefinition Height="*" />
+                        	</Grid.RowDefinitions>
+
+                        	<TextBlock Grid.Row="0" Text="MISSION COMPLETION" Style="{StaticResource HubSubTitle}" />
+
+                        	<Grid Grid.Row="1">
+                        		<Grid.RowDefinitions>
+                        			<RowDefinition Height="30" />
+                        			<RowDefinition Height="*" />
+                        		</Grid.RowDefinitions>
+                        		<Grid.ColumnDefinitions>
+                        			<ColumnDefinition Width="*"/>
+                        			<ColumnDefinition Width="100"/>
+                        			<ColumnDefinition Width="*"/>
+                        		</Grid.ColumnDefinitions>
+                                
+                        		<Grid Grid.Row="0" Grid.Column="0">
+                        			<TextBlock HorizontalAlignment="Left" Text="SOLO" />
+                        		</Grid>
+                        		<Grid Grid.Row="0" Grid.Column="2">
+                        			<TextBlock HorizontalAlignment="Right" Text="CO-OP" />
+                        		</Grid>
+
+                        		<Grid Grid.Row="1" Grid.Column="1">
+
+                        			<Path Fill="#FFF4F4F5"
+                        				Data="M 12,0 L 24,15    24,335 12,350 0,335    0,15 12,0" 
+                        				HorizontalAlignment="Center" />
+
+                        			<Rectangle Width="24" VerticalAlignment="Stretch" Margin="0,20,0,20" Fill="#FFC7C7C7" />
+
+                        			<StackPanel HorizontalAlignment="Center" Margin="0,25,0,25">
+                        				<Grid>
+                        					<Grid.ColumnDefinitions>
+                        						<ColumnDefinition Width="38" />
+                        						<ColumnDefinition Width="24" />
+                        						<ColumnDefinition Width="38" />
+                        					</Grid.ColumnDefinitions>
+
+                        					<Rectangle Grid.Column="0" Margin="5,0,8,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        					<TextBlock Grid.Column="1" Text="1" Margin="0,5,0,5" HorizontalAlignment="Center" Foreground="Black" />
+                        					<Rectangle Grid.Column="2" Margin="8,0,5,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        				</Grid>
+                        				<Grid>
+                        					<Grid.ColumnDefinitions>
+                        						<ColumnDefinition Width="38" />
+                        						<ColumnDefinition Width="24" />
+                        						<ColumnDefinition Width="38" />
+                        					</Grid.ColumnDefinitions>
+
+                        					<Rectangle Grid.Column="0" Margin="5,0,8,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        					<TextBlock Grid.Column="1" Text="2" Margin="0,5,0,5" HorizontalAlignment="Center" Foreground="Black" />
+                        					<Rectangle Grid.Column="2" Margin="8,0,5,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        				</Grid>
+                        				<Grid>
+                        					<Grid.ColumnDefinitions>
+                        						<ColumnDefinition Width="38" />
+                        						<ColumnDefinition Width="24" />
+                        						<ColumnDefinition Width="38" />
+                        					</Grid.ColumnDefinitions>
+
+                        					<Rectangle Grid.Column="0" Margin="5,0,8,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        					<TextBlock Grid.Column="1" Text="3" Margin="0,5,0,5" HorizontalAlignment="Center" Foreground="Black" />
+                        					<Rectangle Grid.Column="2" Margin="8,0,5,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        				</Grid>
+                        				<Grid>
+                        					<Grid.ColumnDefinitions>
+                        						<ColumnDefinition Width="38" />
+                        						<ColumnDefinition Width="24" />
+                        						<ColumnDefinition Width="38" />
+                        					</Grid.ColumnDefinitions>
+
+                        					<Rectangle Grid.Column="0" Margin="5,0,8,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        					<TextBlock Grid.Column="1" Text="4" Margin="0,5,0,5" HorizontalAlignment="Center" Foreground="Black" />
+                        					<Rectangle Grid.Column="2" Margin="8,0,5,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        				</Grid>
+                        				<Grid>
+                        					<Grid.ColumnDefinitions>
+                        						<ColumnDefinition Width="38" />
+                        						<ColumnDefinition Width="24" />
+                        						<ColumnDefinition Width="38" />
+                        					</Grid.ColumnDefinitions>
+
+                        					<Rectangle Grid.Column="0" Margin="5,0,8,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        					<TextBlock Grid.Column="1" Text="5" Margin="0,5,0,5" HorizontalAlignment="Center" Foreground="Black" />
+                        					<Rectangle Grid.Column="2" Margin="8,0,5,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        				</Grid>
+                        				<Grid>
+                        					<Grid.ColumnDefinitions>
+                        						<ColumnDefinition Width="38" />
+                        						<ColumnDefinition Width="24" />
+                        						<ColumnDefinition Width="38" />
+                        					</Grid.ColumnDefinitions>
+
+                        					<Rectangle Grid.Column="0" Margin="5,0,8,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        					<TextBlock Grid.Column="1" Text="6" Margin="0,5,0,5" HorizontalAlignment="Center" Foreground="Black" />
+                        					<Rectangle Grid.Column="2" Margin="8,0,5,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        				</Grid>
+                        				<Grid>
+                        					<Grid.ColumnDefinitions>
+                        						<ColumnDefinition Width="38" />
+                        						<ColumnDefinition Width="24" />
+                        						<ColumnDefinition Width="38" />
+                        					</Grid.ColumnDefinitions>
+
+                        					<Rectangle Grid.Column="0" Margin="5,0,8,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        					<TextBlock Grid.Column="1" Text="7" Margin="0,5,0,5" HorizontalAlignment="Center" Foreground="Black" />
+                        					<Rectangle Grid.Column="2" Margin="8,0,5,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        				</Grid>
+                        				<Grid>
+                        					<Grid.ColumnDefinitions>
+                        						<ColumnDefinition Width="38" />
+                        						<ColumnDefinition Width="24" />
+                        						<ColumnDefinition Width="38" />
+                        					</Grid.ColumnDefinitions>
+
+                        					<Rectangle Grid.Column="0" Margin="5,0,8,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        					<TextBlock Grid.Column="1" Text="8" Margin="0,5,0,5" HorizontalAlignment="Center" Foreground="Black" />
+                        					<Rectangle Grid.Column="2" Margin="8,0,5,0" VerticalAlignment="Center" Height="1" Fill="#FFF4F4F5" />
+                        				</Grid>
+                        			</StackPanel>
+                        		</Grid>
+								
+								<!-- Single Player -->
+                        		<Grid Grid.Row="1" Grid.Column="0">
+                        			<StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        			</StackPanel>
+                        		</Grid>
+
+								<!-- Co-op -->
+                        		<Grid Grid.Row="1" Grid.Column="2">
+                        			<StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        				<Image Margin="0,5,0,5" Height="26.6000003814697" Source="/AuntieDot.UI.WinPhone8;component/Assets/PlaceholderData/legendary.png" />
+                        			</StackPanel>
+                        		</Grid>
+                        	</Grid>
                         </Grid>
                     </StackPanel>
                 </ScrollViewer>
