@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace AuntieDot.Models._343.ServiceRecord
@@ -28,7 +29,7 @@ namespace AuntieDot.Models._343.ServiceRecord
 		public string RankName { get; set; }
 		public Common.ImageUrl RankImageUrl { get; set; }
 		public int RankStartXP { get; set; }
-		public int NextRankStartXP { get; set; }
+		public Int64 NextRankStartXP { get; set; }
 		public int XP { get; set; }
 		public int NextRankId { get; set; }
 		public string NextRankName { get; set; }

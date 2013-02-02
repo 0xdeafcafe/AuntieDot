@@ -72,7 +72,11 @@ namespace AuntieDot.UI.Web.ServiceRecord
 				PlayerSpartanEmblem = Dot.CreateUrlFromObject(ServiceRecordResponse.EmblemImageUrl, "120");
 				PlayerFavWeapon = Dot.CreateUrlFromObject(ServiceRecordResponse.FavoriteWeaponImageUrl, "large");
 				PlayerCurrentRank = Dot.CreateUrlFromObject(ServiceRecordResponse.RankImageUrl, "large");
-				PlayerNextRank = Dot.CreateUrlFromObject(ServiceRecordResponse.NextRankImageUrl, "large");
+
+				if (ServiceRecordResponse.NextRankImageUrl != null)
+					PlayerNextRank = Dot.CreateUrlFromObject(ServiceRecordResponse.NextRankImageUrl, "large");
+
+
 				PlayerCurrentSpecialization = ServiceRecordResponse.Specializations.Single(specialization => specialization.IsCurrent);
 
 				Title = ServiceRecordResponse.Gamertag + "'s Service Record";
