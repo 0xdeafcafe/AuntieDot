@@ -140,9 +140,7 @@ a {
 	text-transform: uppercase;
 }
 .error-content {
-	font-size: 30px;
-	font-weight: 400;
+	margin-top: 60px;
+	font-size: 20px;
 	color: white;
-
-	margin-top: 40px;
 }

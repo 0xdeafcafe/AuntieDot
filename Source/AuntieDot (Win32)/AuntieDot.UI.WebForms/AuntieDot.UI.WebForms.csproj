@@ -73,6 +73,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.responsive.min.css" />
     <Content Include="Content\cosmo.min.css" />
+    <Content Include="Content\download.css" />
     <Content Include="Content\footer.css" />
     <Content Include="Content\global.css" />
     <Content Include="Content\home.css" />
@@ -121,7 +122,7 @@
     <Content Include="ServiceRecord\Default.aspx" />
     <Content Include="ServiceRecord\Error\Exception.aspx" />
     <Content Include="ServiceRecord\Error\GamertagNotFound.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connector\DataModels.cs" />
@@ -214,11 +215,11 @@
   <ItemGroup>
     <Content Include="Error.master" />
     <None Include="Properties\PublishProfiles\AuntieDotProduction.pubxml" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
   <PropertyGroup>

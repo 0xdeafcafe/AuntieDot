@@ -16,8 +16,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{799017
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuntieDot.UI.WPF", "AuntieDot.UI.WPF\AuntieDot.UI.WPF.csproj", "{4E0112C9-BAFB-47B8-884F-86E97119851E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuntieDot.UI.WebForms", "AuntieDot.UI.WebForms\AuntieDot.UI.WebForms.csproj", "{44B143DA-A8C3-4549-94B4-4F32732ECEA4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuntieDot.UI.WinForms", "AuntieDot.UI.WinForms\AuntieDot.UI.WinForms.csproj", "{88C77AA7-E9B8-443D-A322-FE690015CD20}"
@@ -44,10 +42,6 @@ Global
 		{A0C7173B-8F4C-4332-ACBE-54C09F1622CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0C7173B-8F4C-4332-ACBE-54C09F1622CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0C7173B-8F4C-4332-ACBE-54C09F1622CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E0112C9-BAFB-47B8-884F-86E97119851E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E0112C9-BAFB-47B8-884F-86E97119851E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E0112C9-BAFB-47B8-884F-86E97119851E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E0112C9-BAFB-47B8-884F-86E97119851E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44B143DA-A8C3-4549-94B4-4F32732ECEA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44B143DA-A8C3-4549-94B4-4F32732ECEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44B143DA-A8C3-4549-94B4-4F32732ECEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU

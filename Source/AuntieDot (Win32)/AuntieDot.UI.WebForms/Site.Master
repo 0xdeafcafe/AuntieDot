@@ -62,13 +62,13 @@
 					<ul class="site-cascading-list">
 						<li class="site-entry">
 							<a href="http://api.auntiedot.com/" target="_blank">
-								<img class="site-icon" src="http://i.imgur.com/Uju1g.png" style="width: 30px; height: 30px;" />
+								<img class="site-icon" src="http://i.imgur.com/Uju1g.png" style="width: 30px; height: 30px;" alt=""/>
 								<span>Developer Wiki</span>
 							</a>
 						</li>
 						<li class="site-entry">
 							<a href="http://www.github.com/xerax/auntiedot" target="_blank">
-								<img class="site-icon" src="http://i.imgur.com/MVKxp.png" style="width: 30px; height: 30px;" />
+								<img class="site-icon" src="http://i.imgur.com/MVKxp.png" style="width: 30px; height: 30px;" alt=""/>
 								<span>GitHub</span>
 							</a>
 						</li>
@@ -79,18 +79,18 @@
 						<span>Downloads</span>
 						<ul class="downloads-cascading-list">
 							<li>
-								<a href="~/Windows/">
-									Windows
+								<a href="~/Downloads" runat="server">
+									Download Page
 								</a>
 							</li>
 							<li>
-								<a href="~/WindowsPhone/">
-									Windows Phone
+								<a href="http://nuget.org/packages/AuntieDot/" target="_blank" runat="server">
+									NuGet
 								</a>
 							</li>
 							<li>
-								<a href="~/GameModifications/">
-									Game Modifications
+								<a href="https://github.com/Xerax/AuntieDot" target="_blank" runat="server">
+									GitHub
 								</a>
 							</li>
 						</ul>
@@ -104,7 +104,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="http://twitter.com/Alexerax">
+								<a href="http://twitter.com/alexerax">
 									Alex Reed
 								</a>
 							</li>
@@ -121,13 +121,18 @@
 								</a>
 							</li>
 							<li>
-								<a href="~/Windows/">
-									Windows
+								<a href="http://api.auntiedot.net/">
+									Wiki
 								</a>
 							</li>
 							<li>
-								<a href="~/WindowsPhone/">
-									Windows Phone
+								<a href="~/Downloads" runat="server">
+									Downloads
+								</a>
+							</li>
+							<li>
+								<a href="~/ServiceRecord/AuntieDot%20Test" runat="server">
+									Example Gamertag
 								</a>
 							</li>
 						</ul>

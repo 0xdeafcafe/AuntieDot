@@ -9,12 +9,13 @@
     xmlns:controlsPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls"
     x:Class="AuntieDot.UI.WinPhone8.Pages.Concept.ServiceRecord.Hub"
     mc:Ignorable="d"
+	d:DesignHeight="2000"
+	d:DesignWidth="2200"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="False"
-    Height="2000">
+    shell:SystemTray.IsVisible="False">
 
     <phone:PhoneApplicationPage.Resources>
-        <ControlTemplate x:Key="panoramaTemplate" TargetType="controls:Panorama">
+        <ControlTemplate x:Key="panoramaTemplate" TargetType="phone:Panorama">
             <Grid Background="#FF1d1f25">
                 <controlsPrimitives:PanningBackgroundLayer x:Name="BackgroundLayer"
                                                            HorizontalAlignment="Left" VerticalAlignment="Top">

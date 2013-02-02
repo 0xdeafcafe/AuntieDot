@@ -77,7 +77,7 @@ namespace AuntieDot.UI.Web.ServiceRecord
 
 				Title = ServiceRecordResponse.Gamertag + "'s Service Record";
 			}
-			catch (Exception)
+			catch (Exception ex)
 			{
 				Response.Redirect("/ServiceRecord/Error/Exception", false);
 			}

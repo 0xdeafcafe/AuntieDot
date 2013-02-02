@@ -1,0 +1,50 @@
+﻿/* Home Page
+-------------------------------------- */
+#api .user-interaction {
+	margin: 0 auto;
+	height: 200px;
+	width: 501px;
+}
+	.user-interaction .seperator {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		float: left;
+		height: 300px;
+	}
+	.interaction-down {
+		float: left;
+		width: 450px;
+		height: 240px;
+		text-align: left;
+		margin-left: 120px;
+	}
+		.interaction-down p {
+			margin-top: 30px;
+			margin-left: 10px;
+			text-align: left;
+			color: white;
+		}
+		.down-eye-candy {
+			margin-left: 30px;
+			margin-top: 40px;
+			text-align: left;
+		}
+
+.auntie-icon {
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.header {
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+.btn {
+	width: 185px;
+	margin-left: -1px;
+}
+.btn-download {
+	margin-bottom: 20px;
+}
