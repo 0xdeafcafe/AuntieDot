@@ -16,6 +16,7 @@ namespace AuntieDot.Models._343.ServiceRecord
 		public IList<Promotion> Promotions { get; set; }
 		public int TotalLoadoutItemsPurchased { get; set; }
 		public double TotalCommendationProgress { get; set; }
+		public IList<SkillRank> SkillRanks { get; set; } 
 		public string Gamertag { get; set; }
 		public string ServiceTag { get; set; }
 		public Common.ImageUrl EmblemImageUrl { get; set; }

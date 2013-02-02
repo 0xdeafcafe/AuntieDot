@@ -87,6 +87,7 @@
     <Compile Include="343\Playlists\PlaylistsResponse.cs" />
     <Compile Include="343\ServiceRecord\Promotion.cs" />
     <Compile Include="343\ServiceRecord\ServiceRecordResponse.cs" />
+    <Compile Include="343\ServiceRecord\SkillRank.cs" />
     <Compile Include="343\SpartanOps\Chapter.cs" />
     <Compile Include="343\SpartanOps\Episode.cs" />
     <Compile Include="343\SpartanOps\Season.cs" />
