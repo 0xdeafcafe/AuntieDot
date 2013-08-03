@@ -22,7 +22,7 @@
 						<div class="auntie-dot-static-1 auntie-icon"></div>
 
 						<div class="dev-eye-candy">
-							<button class="btn btn-primary" type="button" onclick="launchApiPage();">Access Developer Wiki</button>
+							<button class="btn btn-primary" type="button" onclick="launchApiPage();">Developer Downloads</button>
 						</div>
 					</div>
 					<div class="seperator-vertical seperator"></div>
@@ -48,7 +48,7 @@
 <asp:Content ContentPlaceHolderID="JavascriptInlineContent" runat="server">
 	<script>
 		function launchApiPage() {
-			window.location = "http://api.auntiedot.net";
+			window.location = "http://auntiedot.net/downloads";
 		}
 
 		function launchServiceRecord() {

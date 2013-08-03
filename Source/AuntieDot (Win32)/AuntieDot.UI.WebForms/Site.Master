@@ -43,7 +43,6 @@
 					<a class="brand" href="../">Auntie Dot</a>
 					<div class="nav-collapse" id="main-menu">
 						<ul class="nav" id="main-menu-left">
-							<li><a href="http://api.auntiedot.net/">wiki</a></li>
 							<li><a href="http://github.com/Xerax/AuntieDot">github</a></li>
 							<li><a href="~/Downloads" runat="server">downloads</a></li>
 						</ul>
@@ -61,9 +60,9 @@
 					<span>Other Intresting Sites;</span>
 					<ul class="site-cascading-list">
 						<li class="site-entry">
-							<a href="http://api.auntiedot.com/" target="_blank">
+							<a href="/Downloads" target="_blank">
 								<img class="site-icon" src="http://i.imgur.com/Uju1g.png" style="width: 30px; height: 30px;" alt=""/>
-								<span>Developer Wiki</span>
+								<span>Developer Downloads</span>
 							</a>
 						</li>
 						<li class="site-entry">

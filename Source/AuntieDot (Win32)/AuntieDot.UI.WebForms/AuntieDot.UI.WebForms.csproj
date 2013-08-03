@@ -122,7 +122,6 @@
     <Content Include="ServiceRecord\Default.aspx" />
     <Content Include="ServiceRecord\Error\Exception.aspx" />
     <Content Include="ServiceRecord\Error\GamertagNotFound.aspx" />
-    <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connector\DataModels.cs" />
@@ -215,6 +214,7 @@
   <ItemGroup>
     <Content Include="Error.master" />
     <None Include="Properties\PublishProfiles\AuntieDotProduction.pubxml" />
+    <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
