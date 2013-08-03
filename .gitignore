@@ -63,9 +63,6 @@ local.properties
 .builds
 *.dotCover
 
-# Security, yolo
-web.config
-
 ## TODO: If you have NuGet Package Restore enabled, uncomment this
 #packages/
 
