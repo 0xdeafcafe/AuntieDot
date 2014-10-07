@@ -32,4 +32,4 @@ AuntieDot
 
 
 #### End Note ####
-> 343, why would you take away something that the community loved, and that, judging from our research, looks pretty much complete for public consumption? It doesn't make sense and just strangles the community even more. We hope this opens your eyes a bit.
+> 343, why would you take away something that the community loved, and that, judging from our research, looks pretty much complete for public consumption? It doesn't make sense and just strangles the community even more.
