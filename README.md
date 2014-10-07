@@ -14,7 +14,13 @@ AuntieDot
     Win32 (.NET 4.5 +)
     WinRT (.NET 4.5 +, Windows Phone 8 and Windows Store Apps)
     
-    
+=========
+
+#### Nota Bene ####
+> The code for this hasn't been touched since August 03, 2013. The Authentication code doesn't work, and some of the Data Models could be incorrect after all this time. For up-to-date Data Models and Api Helpers, please check the [Branch](https://github.com/TheTree/Branch) project on Github. And for up-to-date Authentication code, please check the [343Auth](https://github.com/TheTree/343Auth) project on Github by [iBotPeaches](https://github.com/iBotPeaches).
+
+=========
+
 #### Documentation ####
 > Documentation on the Authentication Process, Endpoints and DataModels is avaiable on the developer wiki [here](http://api.auntiedot.net/).
 
